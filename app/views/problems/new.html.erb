@@ -1,12 +1,12 @@
 <%= form_for :problem, url: problems_path do |f| %>
 <p>
   <%= f.label :usertesting_email %><br>
-  <%= f.text_field :user_name %>
+  <%= f.text_field :user_name, :size => 35 %>
 </p>
 
 <p>
   <%= f.label :problem_name %><br>
-  <%= f.text_field :problem_name %>
+  <%= f.text_field :problem_name, :size => 35 %>
   <%= f.select :prob_type, [['Select a problem type', nil], 'Downtime', 'Bug', 'fat'] %>
 </p>
 
