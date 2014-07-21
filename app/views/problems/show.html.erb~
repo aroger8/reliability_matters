@@ -21,7 +21,7 @@
 
 
 <p>
-  <%= link_to 'Edit', edit_problem_path(@problem) %>
+  <%= link_to 'Edit', edit_problem_path(problem) %>
 </p>
 
 
