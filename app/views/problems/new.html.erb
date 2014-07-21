@@ -1,5 +1,10 @@
 <%= form_for :problem, url: problems_path do |f| %>
 <p>
+  <%= f.label :usertesting_email %><br>
+  <%= f.text_field :user_name %>
+</p>
+
+<p>
   <%= f.label :problem_name %><br>
   <%= f.text_field :problem_name %>
 </p>

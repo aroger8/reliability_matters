@@ -16,6 +16,6 @@ class ProblemsController < ApplicationController
 
   private
     def problem_params
-      params.require(:problem).permit(:problem_name, :problem_des)
+      params.require(:problem).permit(:problem_name, :problem_des, :user_name)
     end
 end
