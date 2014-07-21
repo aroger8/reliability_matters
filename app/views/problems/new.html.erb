@@ -7,6 +7,7 @@
 <p>
   <%= f.label :problem_name %><br>
   <%= f.text_field :problem_name %>
+  <%= f.select :prob_type, [['Select a problem type', nil], 'Downtime', 'Bug', 'fat'] %>
 </p>
 
 <p>
