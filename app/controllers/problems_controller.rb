@@ -9,6 +9,20 @@ class ProblemsController < ApplicationController
   
   def new
   end
+  
+  def edit
+    #@problem = Problem.find(params[:id])
+  end
+
+  def update
+    @problem = Problem.find(params[:id])
+
+    if @problem.update(problem_params)
+      redirect_to @problem
+    else
+      render 'edit'
+    end
+  end
 
   def create
     @problem = Problem.new(problem_params)

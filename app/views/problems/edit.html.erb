@@ -1,4 +1,6 @@
-<%= form_for :problem, url: problems_path do |f| %>
+<h1>Edits</h1>
+
+<%= form_for :problem, url: problem_path(@problem), method: :patch do |f| %>
 <p>
   <%= f.label :usertesting_email %><br>
   <%= f.text_field :user_name, :size => 35 %>
@@ -16,6 +18,6 @@
 </p>
 
 <p>
-  <%= f.submit %> 
+  <%= f.submit %>
 </p>
 <% end %>
