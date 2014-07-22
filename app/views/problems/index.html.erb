@@ -1,9 +1,16 @@
-<h1>So it has come to this...</h1>
+<h1>All Outstanding Issues</h1>
 
-<p>Here at usertesting.com, we make an effort to ship reliable, error-free code.</p>
-<p>Unfortunatly, we arent perfect, so if you encounter some sort of problem, 
-   please let us know! </p>
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Text</th>
+  </tr>
 
-<p>
-<a href="/problems/new">SUBMIT YOUR PROBLEM</a>
-<p>
+  <% @problems.each do |problem| %>
+    <tr>
+      <td><%= problem.problem_name %></td>
+      <td><%= problem.problem_des %></td>
+      <td><a href="mailto:<%= problem.user_name %>"><%= problem.user_name %></a></td>
+    </tr>
+  <% end %>
+</table>
