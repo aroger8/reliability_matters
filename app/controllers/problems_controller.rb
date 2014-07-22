@@ -11,7 +11,7 @@ class ProblemsController < ApplicationController
   end
   
   def edit
-    #@problem = Problem.find(params[:id])
+    @problem = Problem.find(params[:id])
   end
 
   def update
